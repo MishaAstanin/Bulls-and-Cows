@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>841</width>
+    <height>692</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ИГРА БЫКИ И КОРОВЫ</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>300</y>
+      <width>651</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="begin_play">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>150</y>
+       <width>321</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    padding:10px;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 2px;
+    border: 1px solid #970236;
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #fc1d4d, stop: 1 #fc1df0);
+ }
+QPushButton:pressed {
+    color: #111;
+    border: 1px solid #fc1d4d;
+    background: #fff;
+ }</string>
+     </property>
+     <property name="text">
+      <string>НАЧАТЬ ИГРУ</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>581</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="rules">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    padding:4px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #1c186d;
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #4287ff, stop: 1 #3a028d);
+ }
+QPushButton:pressed {
+    color: #111;
+    border: 1px solid #3873d9;
+    background: #fff;
+ }</string>
+        </property>
+        <property name="text">
+         <string>Правила игры</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="for_example">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    padding:4px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #200297;
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #2be0e3, stop: 1 #3a028d);
+ }
+QPushButton:pressed {
+    color: #111;
+    border: 1px solid #2be0e3;
+    background: #fff;
+ }</string>
+        </property>
+        <property name="text">
+         <string>Пример</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="close">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>620</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    padding:4px;
+    color: #fbf5ff;
+    font-size: 16px;
+    border-radius: 2px;
+    border: 1px solid #4e027e;
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #9503a6, stop: 1 #7403ba);
+ }
+QPushButton:pressed {
+    color: #111;
+    border: 1px solid #027e10;
+    background: #fff;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Закрыть</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>100</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>301</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/pngwing.com (11).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>351</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    padding:4px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #200297;
+    background-color: qlineargradient( x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #4287ff, stop: 1 #3a028d);
+ }
+QPushButton:pressed {
+    color: #111;
+    border: 1px solid #3873d9;
+    background: #fff;
+ }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/img/pngwing.com (13).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>60</y>
+      <width>132</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: brown;</string>
+    </property>
+    <property name="text">
+     <string>БЫКИ </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>130</y>
+      <width>33</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: orange;</string>
+    </property>
+    <property name="text">
+     <string>И</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>174</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: green;</string>
+    </property>
+    <property name="text">
+     <string>КОРОВЫ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>191</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/Users/misha/Downloads/pngwing.com (17).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>440</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/Users/misha/Downloads/pngwing.com (19).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>841</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>close</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>742</x>
+     <y>649</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>723</x>
+     <y>655</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
